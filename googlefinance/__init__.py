@@ -52,7 +52,6 @@ def request(symbols):
 
 def requestNews(symbol):
     url = buildNewsUrl(symbol)
-    print "url: ", url
     req = Request(url)
     resp = urlopen(req)
     content = resp.read()
